@@ -1,7 +1,9 @@
 <img src="https://raw.githubusercontent.com/ryanbey/circle-tracks/main/src/assets/logos/readme-logo.png" alt="Circle Tracks logo"/>
 
 ### _Currently in development_
-Expected release date: Summer 2022
+Release date: Summer 2022
+
+---
 
 Full stack SPA to explore different racetracks run in the top three NASCAR national series.
 
