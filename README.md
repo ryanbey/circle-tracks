@@ -9,7 +9,7 @@ Circle Tracks contains basic information about every track the top three NASCAR 
 * Icons by [Icons8](https://icons8.com/).
 * Track map images by [iRacing](https://www.iracing.com/).
 
-### Development server
+## Development server
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
