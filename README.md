@@ -27,6 +27,6 @@ Circle Tracks contains basic information about every track the top three NASCAR 
 
 ## Credits
 
-* Icons by [Icons8](https://icons8.com/)
-* Track map images by [iRacing](https://www.iracing.com/)
 * Track information by [NASCAR](https://www.nascar.com/) and [iRacing](https://www.iracing.com/)
+* Track maps by [iRacing](https://www.iracing.com/)
+* Icons by [Icons8](https://icons8.com/)
