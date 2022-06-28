@@ -1,4 +1,5 @@
 ![Circle Tracks logo](https://raw.githubusercontent.com/ryanbey/circle-tracks/main/src/assets/logos/logo-full.png)
+<img src="https://raw.githubusercontent.com/ryanbey/circle-tracks/main/src/assets/logos/logo-full.png" alt="drawing" width="300"/>
 
 Full stack SPA to explore different racetracks run in the top three NASCAR national series.
 
