@@ -15,6 +15,7 @@ Circle Tracks contains basic information about every track the top three NASCAR 
 * MongoDB
 * Node.js
 * Express
+* Mongoose
 * Visual Studio Code
 * Adobe Photoshop (logo design)
 * Adobe XD (wireframes)
