@@ -1,0 +1,15 @@
+.banner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.banner-image {
+   max-width: 100%;
+}
+
+.banner-logo {
+   width: 30%;
+   position: absolute;
+   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .5));
+}
