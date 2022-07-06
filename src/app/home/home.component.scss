@@ -1,0 +1,24 @@
+.category-cards-layout {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   max-width: 70%;
+   margin: 0 auto;
+}
+
+.category-card {
+   background-color: var(--darkgray);
+   max-width: 300px;
+   border-radius: var(--bradius);
+   margin: 1em;
+   &-heading {
+      margin-top: .4em;
+      font-size: 1.2em;
+      font-weight: 400;
+      text-align: center;
+   }
+   &-image {
+      border-top-right-radius: var(--bradius);
+      border-top-left-radius: var(--bradius);
+   }
+}

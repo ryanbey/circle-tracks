@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TrackListComponent } from './tracks/track-list/track-list.component';
 import { TrackItemComponent } from './tracks/track-item/track-item.component';
 import { TrackDetailComponent } from './tracks/track-detail/track-detail.component';
-import { CategoryCardComponent } from './home/category-card/category-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -22,7 +21,6 @@ import { TrackEditComponent } from './tracks/track-edit/track-edit.component';
     TrackListComponent,
     TrackItemComponent,
     TrackDetailComponent,
-    CategoryCardComponent,
     FooterComponent,
     HeaderComponent,
     HomeComponent,
