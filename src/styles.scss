@@ -35,6 +35,24 @@ body {
    margin: 0;
 }
 
+.page-heading-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1em;
+   & > img {
+      width: 30px;
+      height: 30px;
+      margin: 0 .75em;
+   }
+}
+
+.page-heading {
+   text-align: center;
+   user-select: none;
+   margin: 0;
+}
+
 // Don't touch my images
 img {
    user-select: none;

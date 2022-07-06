@@ -4,6 +4,10 @@
    display: flex;
 }
 
+.page-heading {
+   text-align: left;
+}
+
 app-track-list {
    max-width: 40%;
    margin-right: 2em;
