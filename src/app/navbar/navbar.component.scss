@@ -1,0 +1,33 @@
+ul {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+   display: flex;
+}
+
+a {
+   text-decoration: none;
+   padding: .5em 1em;
+   font-size: 1.2em;
+   &:visited {
+      color: inherit;
+   }
+   &:hover {
+      background-color: var(--black);
+   }
+}
+
+li {
+   padding: .5em 0;
+}
+
+.active {
+   box-shadow: inset 0 -3px 0 var(--blue);
+}
+
+.navbar {
+   background-color: var(--darkgray);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

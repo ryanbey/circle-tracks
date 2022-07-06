@@ -7,8 +7,9 @@ import { TrackEditComponent } from './tracks/track-edit/track-edit.component';
 import { TracksComponent } from './tracks/tracks.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   // Home page
-  { path: '', component: HomeComponent},
+  { path: 'home', component: HomeComponent },
   // Tracks page
   { path: 'tracks', component: TracksComponent, children: [
     { path: 'new', component: TrackEditComponent },

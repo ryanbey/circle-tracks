@@ -3,20 +3,21 @@
 //  Circle Tracks
 //////
 
-// Colors
-$black: #080808;
-$darkgray: #1d1d1d;
-$gray: #383838;
-$blue: #1e88e5;
-$text-light: #D0D0D0;
-$text-faded: #888888;
+// Color Variables
+:root {
+   --black: #080808;
+   --darkgray: #1d1d1d;
+   --gray: #383838;
+   --blue: #1e88e5;
+   --white: white;
+}
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 body {
    background: black;
-   color: white;
+   color: var(--white);
    font-family: "Poppins", sans-serif;
    margin: 0;
 }
