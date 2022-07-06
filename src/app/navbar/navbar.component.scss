@@ -9,6 +9,7 @@ a {
    text-decoration: none;
    padding: .75em 1em;
    font-size: 1.2em;
+   box-sizing: content-box;
    &:visited {
       color: inherit;
    }
@@ -22,7 +23,7 @@ li {
 }
 
 .active {
-   box-shadow: inset 0 -3px 0 var(--blue);
+   box-shadow: inset 0 -4px 0 var(--blue);
 }
 
 .navbar {

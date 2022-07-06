@@ -1,0 +1,19 @@
+.track-item-container {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   transition: 150ms;
+   &:hover {
+      background-color: var(--gray);
+   }
+}
+
+.track-map {
+   margin-right: 1em;
+}
+
+.track-name {
+   margin: 0;
+   font-weight: 500;
+   font-size: 1.2em;
+}

@@ -7,13 +7,16 @@
    --black: #080808;
    --darkgray: #1d1d1d;
    --gray: #383838;
+   --lightgray: #5a5a5a;
    --blue: #1e88e5;
+   --blue-darker: #1b6eb8;
    --white: white;
 }
 
 // Style variables
 :root {
    --bradius: 6px;
+   --transition: cubic-bezier(0.6, 0.1, 0.35, 1) 250ms;
 }
 
 // Fonts

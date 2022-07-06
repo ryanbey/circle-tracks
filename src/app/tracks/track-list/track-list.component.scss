@@ -1,0 +1,46 @@
+.top-bar {
+   display: flex;
+   align-items: center;
+   padding: .5em;
+}
+
+.track-tags {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.track-tag {
+   font-size: .9em;
+   background-color: var(--gray);
+   padding: .2em .7em;
+   margin: .25em;
+   border-radius: 1em;
+   cursor: pointer;
+   user-select: none;
+   transition: var(--transition);
+   &:hover {
+      background-color: var(--lightgray);
+   }
+}
+
+.new-track-button {
+   text-decoration: none;
+   white-space: nowrap;
+   background-color: var(--blue);
+   padding: .5em 1em;
+   border-radius: var(--bradius);
+   transition: var(--transition);
+   &:visited {
+      color: inherit;
+   }
+   &:hover {
+      background-color: var(--blue-darker);
+   }
+}
+
+hr {
+   background-color: var(--gray);
+   height: 2px;
+   border: 0px;
+   margin-bottom: 0;
+}
