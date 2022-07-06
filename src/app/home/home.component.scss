@@ -2,7 +2,7 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   max-width: 65%;
+   max-width: 69%;
    margin: 0 auto;
 }
 
@@ -26,5 +26,17 @@
    }
    &:hover {
       transform: translateY(-6px);
+   }
+}
+
+@media(max-width: 1450px) {
+   .category-cards-layout {
+      max-width: 80%;
+   }
+}
+
+@media(max-width: 1300px) {
+   .category-cards-layout {
+      max-width: 90%;
    }
 }

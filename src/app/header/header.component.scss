@@ -4,12 +4,26 @@
    align-items: center;
 }
 
-.banner-image {
-   max-width: 100%;
-}
-
 .banner-logo {
    width: 25%;
    position: absolute;
    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, .5));
+}
+
+@media(max-width: 1100px) {
+   .banner-logo {
+      width: 40%;
+   }
+}
+
+@media(max-width: 825px) {
+   .banner-logo {
+      width: 50%;
+   }
+}
+
+@media(max-width: 600px) {
+   .banner-logo {
+      width: 75%;
+   }
 }
