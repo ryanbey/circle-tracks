@@ -2,6 +2,7 @@
    display: flex;
    align-items: center;
    padding: .5em;
+   padding-bottom: 0;
 }
 
 .track-tags {
@@ -10,7 +11,7 @@
 }
 
 .track-tag {
-   font-size: .9em;
+   font-size: .8em;
    background-color: var(--gray);
    padding: .2em .7em;
    margin: .25em;
@@ -26,8 +27,9 @@
 .new-track-button {
    text-decoration: none;
    white-space: nowrap;
-   background-color: var(--blue);
    padding: .5em 1em;
+   margin: 0 .5em;
+   background-color: var(--blue);
    border-radius: var(--bradius);
    transition: var(--transition);
    &:visited {
