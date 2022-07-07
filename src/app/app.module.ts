@@ -14,6 +14,8 @@ import { TracksComponent } from './tracks/tracks.component';
 import { ContactComponent } from './contact/contact.component';
 import { TrackEditComponent } from './tracks/track-edit/track-edit.component';
 import { TrackEmptyComponent } from './tracks/track-empty/track-empty.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { TrackEmptyComponent } from './tracks/track-empty/track-empty.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

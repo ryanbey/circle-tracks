@@ -13,4 +13,7 @@
    </div>
 </div>
 <hr>
-<app-track-item></app-track-item>
+<app-track-item
+   *ngFor="let track of tracks"
+   [track]="track"
+></app-track-item>

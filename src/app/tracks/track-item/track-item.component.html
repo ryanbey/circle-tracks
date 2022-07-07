@@ -1,20 +1,10 @@
-<div class="track-item-container">
-   <img class="track-map" src="../../../assets/images/track-maps/daytona-thicc.png" alt="alt">
-   <h2 class="track-name">Daytona International Speedway</h2>
-</div>
-<div class="track-item-container">
-   <img class="track-map" src="../../../assets/images/track-maps/daytona-thicc.png" alt="alt">
-   <h2 class="track-name">Daytona International Speedway</h2>
-</div>
-<div class="track-item-container">
-   <img class="track-map" src="../../../assets/images/track-maps/daytona-thicc.png" alt="alt">
-   <h2 class="track-name">Daytona International Speedway</h2>
-</div>
-<div class="track-item-container">
-   <img class="track-map" src="../../../assets/images/track-maps/daytona-thicc.png" alt="alt">
-   <h2 class="track-name">Daytona International Speedway</h2>
-</div>
-<div class="track-item-container">
-   <img class="track-map" src="../../../assets/images/track-maps/daytona-thicc.png" alt="alt">
-   <h2 class="track-name">Daytona International Speedway</h2>
-</div>
+<a class="track-item-container"
+   [routerLink]="track.id"
+   routerLinkActive="active-track">
+
+   <img class="track-map" 
+      [src]="track?.imageUrl"
+      [alt]="'Track map image of {{ track?.name }}'">
+
+   <h2 class="track-name">{{ track?.name }}</h2>
+</a>
