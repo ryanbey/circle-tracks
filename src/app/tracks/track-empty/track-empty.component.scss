@@ -1,0 +1,10 @@
+.track-empty-container {
+   background-color: var(--darkgray);
+   padding: 5em 1em;
+   text-align: center;
+   color: var(--lightgray);
+   border-radius: var(--bradius);;
+   & > img {
+      width: 15%;
+   }
+}

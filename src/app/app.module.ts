@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { TracksComponent } from './tracks/tracks.component';
 import { ContactComponent } from './contact/contact.component';
 import { TrackEditComponent } from './tracks/track-edit/track-edit.component';
+import { TrackEmptyComponent } from './tracks/track-empty/track-empty.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TrackEditComponent } from './tracks/track-edit/track-edit.component';
     HomeComponent,
     TracksComponent,
     ContactComponent,
-    TrackEditComponent
+    TrackEditComponent,
+    TrackEmptyComponent
   ],
   imports: [
     BrowserModule,

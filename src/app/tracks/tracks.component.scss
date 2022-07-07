@@ -14,3 +14,7 @@ app-track-list {
    background-color: var(--darkgray);
    border-radius: var(--bradius);
 }
+
+.router-outlet {
+   width: 100%;
+}
