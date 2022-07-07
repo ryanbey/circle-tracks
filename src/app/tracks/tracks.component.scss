@@ -18,3 +18,25 @@ app-track-list {
 .router-outlet {
    width: 100%;
 }
+
+@media(max-width: 1200px) {
+   .tracks-layout {
+      flex-direction: column-reverse;
+   }
+
+   app-track-list {
+      max-width: 100%;
+      margin: 0;
+   }
+
+   .router-outlet {
+      margin-bottom: 1em;
+      max-width: 100%;
+   }
+}
+
+@media(max-width: 900px) {
+   .tracks-layout {
+      max-width: 90%;
+   };
+}
