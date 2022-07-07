@@ -41,7 +41,7 @@ a {
 }
 
 label {
-   font-size: 1.2em;
+   font-size: 1.1em;
    color: var(--white);
    margin-right: 1em;
 }
@@ -55,7 +55,7 @@ input {
    outline: solid 1px var(--gray);
    border-radius: var(--bradius);
    padding: .5em;
-   font-size: 1.2em;
+   font-size: 1em;
    width: 400px;
    &:focus {
       outline: solid 2px var(--blue);
