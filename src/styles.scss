@@ -8,8 +8,9 @@
    --darkgray: #1d1d1d;
    --gray: #383838;
    --lightgray: #5a5a5a;
+   --lightgray-darker: #474747;
    --blue: #1e88e5;
-   --blue-darker: #1b6eb8;
+   --blue-darker: #1a65a7;
    --white: white;
 }
 
@@ -37,6 +38,56 @@ body {
 
 a {
    color: var(--white);
+}
+
+label {
+   font-size: 1.2em;
+   color: var(--white);
+   margin-right: 1em;
+}
+
+input {
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   color: var(--white);
+   background-color: var(--black);
+   border: none;
+   outline: solid 1px var(--gray);
+   border-radius: var(--bradius);
+   padding: .5em;
+   font-size: 1.2em;
+   width: 400px;
+   &:focus {
+      outline: solid 2px var(--blue);
+   }
+}
+
+.form-button {
+   font-family: "Poppins", sans-serif;
+   font-size: 1.1em;
+   width: 150px;
+   color: var(--white);
+   padding: .5em 1em;
+   margin: 0 .5em;
+   border-radius: var(--bradius);
+   transition: var(--transition);
+   border: none;
+   cursor: pointer;
+   &:visited {
+      color: inherit;
+   }
+   &-blue {
+      background-color: var(--blue);
+      &:hover {
+         background-color: var(--blue-darker);
+      }
+   }
+   &-notblue {
+      background-color: var(--lightgray);
+      &:hover {
+         background-color: var(--lightgray-darker);
+      }
+   }
 }
 
 .page-heading-container {
