@@ -1,8 +1,10 @@
 .top-bar {
+   background-color: var(--darkgray);
+   border-radius: var(--bradius);
+   margin-bottom: 1em;
+   padding: .5em;
    display: flex;
    align-items: center;
-   padding: .5em;
-   padding-bottom: 0;
 }
 
 .track-tags {
@@ -40,9 +42,7 @@
    }
 }
 
-hr {
-   background-color: var(--gray);
-   height: 2px;
-   border: 0px;
-   margin-bottom: 0;
+.track-list-container {
+   background-color: var(--darkgray);
+   border-radius: var(--bradius);
 }

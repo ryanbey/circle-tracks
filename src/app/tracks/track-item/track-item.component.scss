@@ -4,6 +4,7 @@
    cursor: pointer;
    transition: 150ms;
    text-decoration: none;
+   border-radius: var(--bradius);
    &:hover {
       background-color: var(--gray);
    }

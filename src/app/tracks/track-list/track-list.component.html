@@ -12,8 +12,7 @@
       <a class="new-track-button" routerLink="new">Add Track</a>
    </div>
 </div>
-<hr>
-<app-track-item
-   *ngFor="let track of tracks"
-   [track]="track"
-></app-track-item>
+<div class="track-list-container">
+   <app-track-item *ngFor="let track of tracks" [track]="track">
+   </app-track-item>
+</div>
