@@ -1,23 +1,45 @@
 <div class="track-edit-container">
    <h2 class="add-track">Add Track</h2>
-   <form id="track-edit-form" action="">
+   <form id="track-edit-form" (ngSubmit)="onSubmit(f)" #f="ngForm">
       <!-- Entries -->
       <div class="form-entry">
          <label for="track-name">Name:</label>
-         <input type="text" placeholder="Track Name">
+         <input 
+            type="text"
+            placeholder="Track Name"
+            name="track-name"
+            [ngModel]="track?.name"
+            #name="ngModel"
+            required>
       </div>
       <div class="form-entry">
          <label for="track-built">Built:</label>
-         <input type="text" placeholder="Year">
+         <input 
+            type="text"
+            placeholder="Year"
+            name="track-built"
+            [ngModel]="track?.built"
+            #built="ngModel"
+            required>
       </div>
       <div class="form-entry">
          <label for="track-length">Length:</label>
-         <input type="text" placeholder="Miles">
+         <input 
+            type="text"
+            placeholder="Miles"
+            name="track-length"
+            [ngModel]="track?.length"
+            #length="ngModel"
+            required>
       </div>
       <div class="form-entry">
-         <label for="track-surface">Surface: </label>
-         <select name="track-surface" id="track-surface" >
-            <option value="" disabled selected hidden>Choose Surface</option>
+         <label for="track-surface">Surface:</label>
+         <select
+            name="track-surface"
+            id="track-surface"
+            [ngModel]="track?.surface"
+            #surface="ngModel"
+            required>
             <option value="asphalt">Asphalt</option>
             <option value="concrete">Concrete</option>
             <option value="dirt">Dirt</option>
@@ -25,23 +47,53 @@
       </div>
       <div class="form-entry">
          <label for="track-turns">Turns:</label>
-         <input type="number" placeholder="Number of turns">
+         <input 
+            type="number"
+            placeholder="Number of turns"
+            name="track-turns"
+            [ngModel]="track?.turns"
+            #turns="ngModel"
+            required>
       </div>
       <div class="form-entry">
          <label for="track-banking">Banking:</label>
-         <input type="text" placeholder="Degrees">
+         <input 
+            type="text"
+            placeholder="Degrees"
+            name="track-banking"
+            [ngModel]="track?.banking"
+            #banking="ngModel"
+            required>
       </div>
       <div class="form-entry">
          <label for="track-capacity">Capacity:</label>
-         <input type="text" placeholder="Seating capacity">
+         <input 
+            type="text"
+            placeholder="Seating capacity"
+            name="track-capacity"
+            [ngModel]="track?.capacity"
+            #capacity="ngModel"
+            required>
       </div>
       <div class="form-entry">
          <label for="track-map-url">Map URL:</label>
-         <input type="text" value="assets/images/track-maps/">
+         <input 
+            type="text"
+            placeholder="track-map.png"
+            name="track-map-url"
+            [ngModel]="track?.trackMapUrl"
+            #mapUrl="ngModel"
+            required>
       </div>
       <div class="form-entry">
          <label for="track-image-url">Image URL:</label>
-         <input type="text" value="assets/images/track-images/">
+         <input 
+            type="text"
+            placeholder="track-image.png"
+            name="track-image-url"
+            [ngModel]="track?.trackImageUrl"
+            #imageUrl="ngModel"
+            required>
       </div>
 
       <!-- Buttons -->
