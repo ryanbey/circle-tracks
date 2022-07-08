@@ -1,16 +1,17 @@
 const mongoose = require("mongoose");
 
 const trackSchema = mongoose.Schema({
-  id: { type: String, required: true },
-  name: { type: String, required: true },
-  built: { type: String, required: true },
-  length: { type: String, required: true },
-  surface: { type: String, required: true },
-  turns: { type: String, required: true },
-  banking: { type: String, required: true },
-  capacity: { type: String, required: true },
-  trackMapUrl: { type: String, required: true },
-  trackImageUrl: { type: String, required: true },
+  // Stuff broke with required set to true, fix later
+  id: { type: String, required: false },
+  name: { type: String, required: false },
+  built: { type: String, required: false },
+  length: { type: String, required: false },
+  surface: { type: String, required: false },
+  turns: { type: String, required: false },
+  banking: { type: String, required: false },
+  capacity: { type: String, required: false },
+  trackMapUrl: { type: String, required: false },
+  trackImageUrl: { type: String, required: false },
 });
 
 module.exports = mongoose.model("Track", trackSchema);

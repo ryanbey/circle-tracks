@@ -56,10 +56,10 @@ router.post("/", (req, res, next) => {
 
   track
     .save()
-    .then((createdTrack) => {
+    .then((newTrack) => {
       res.status(201).json({
         message: "Track added successfully",
-        track: createdTrack,
+        track: newTrack,
       });
     })
     .catch((error) => {
