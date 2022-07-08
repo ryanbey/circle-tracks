@@ -42,8 +42,8 @@ export class TrackEditComponent implements OnInit {
   onSubmit(form: NgForm) {
     const value = form.value;
     const newTrack = new Track(
-      '',
-      value.id,
+      '', // Object Id populated by MongoDB
+      value.id, // This is having issues when adding a new track
       value.name,
       value.built,
       value.length,
