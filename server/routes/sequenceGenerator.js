@@ -11,8 +11,8 @@ function SequenceGenerator() {
         error: err,
       });
     }
-    sequenceId = sequence._id;
-    maxTrackId = sequence.maxTrackId;
+    sequenceId = Sequence._id;
+    maxTrackId = Sequence.maxTrackId;
   });
 }
 

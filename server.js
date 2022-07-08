@@ -5,6 +5,7 @@ let http = require("http");
 let cookieParser = require("cookie-parser");
 let logger = require("morgan");
 let mongoose = require("mongoose");
+require("dotenv").config();
 
 // Import routing files
 let index = require("./server/routes/app");
@@ -48,6 +49,7 @@ app.use("/tracks", trackRoutes);
 // Establish a connection to the Mongo database
 mongoose.connect(
   "mongodb://localhost:27017/circle-tracks",
+  // process.env.MONGO_URI,
   { useNewUrlParser: true },
   (err, res) => {
     if (err) {
