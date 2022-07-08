@@ -9,6 +9,7 @@ export class Track{
       public turns: string,
       public banking: string,
       public capacity: string,
-      public imageUrl: string,
+      public trackMapUrl: string,
+      public trackImageUrl: string,
    ) {}
 }
