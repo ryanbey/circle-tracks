@@ -16,7 +16,7 @@ export class TrackService {
   // Get all tracks
   getTracks() {
     this.http
-      .get<{ message: String; tracks: Track[] }>('http://localhost:3000/tracks')
+      .get<{ message: String; tracks: Track[] }>('http://localhost:3000/tracks/')
       .subscribe(
         (responseData) => {
           this.tracks = responseData.tracks;
@@ -49,7 +49,7 @@ export class TrackService {
     // Add to database
     this.http
       .post<{ message: string; track: Track }>(
-        'http://localhost:3000/tracks',
+        'http://localhost:3000/tracks/',
         track,
         { headers: headers }
       )
@@ -74,7 +74,7 @@ export class TrackService {
 
     // Set the id of the new Track to the id of the old Track
     newTrack.id = originalTrack.id;
-    // newTrack._id = originalTrack._id;
+    newTrack._id = originalTrack._id;
 
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 

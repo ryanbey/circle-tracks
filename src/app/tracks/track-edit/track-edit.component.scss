@@ -42,3 +42,9 @@ input[type=number]::-webkit-inner-spin-button {
    width: 35px;
    height: 35px;
  }
+
+button:disabled {
+   background-color: var(--gray);
+   outline: 1px solid var(--blue);
+   cursor: not-allowed;
+}

@@ -1,6 +1,6 @@
 let Sequence = require("../models/sequence");
 
-let maxTrackId = 0;
+let maxTrackId;
 let sequenceId = null;
 
 function SequenceGenerator() {

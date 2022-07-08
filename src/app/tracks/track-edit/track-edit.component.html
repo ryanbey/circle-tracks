@@ -98,8 +98,8 @@
 
       <!-- Buttons -->
       <div class="track-edit-buttons">
-         <button class="form-button form-button-blue" type="submit">Edit</button>
-         <button class="form-button form-button-notblue" type="button">Cancel</button>
+         <button class="form-button form-button-blue" type="submit" [disabled]="!f.valid">Edit</button>
+         <button class="form-button form-button-notblue" type="button" (click)="onCancel()">Cancel</button>
       </div>
    </form>
 </div>

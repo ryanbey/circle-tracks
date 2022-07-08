@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Track } from '../track.model';
+import { TrackService } from '../tracks.service';
 
 @Component({
   selector: 'app-track-list',
@@ -12,8 +14,18 @@ export class TrackListComponent implements OnInit {
     new Track('', '2', 'Track 2', '2005', '2', 'asphalt', '4', '26', '55000', 'assets/images/track-maps/daytona-thicc.png', ''),
     new Track('', '3', 'Track 3', '2006', '0.5', 'concrete', '4', '16', '74000', 'assets/images/track-maps/daytona-thicc.png', ''),
   ];
+  subscription: Subscription;
 
-  constructor() {}
+  constructor(private trackService: TrackService) {
+    this.trackService.getTracks();
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.subscription = this.trackService.trackListChangedEvent.subscribe(
+      (tracks: Track[]) => {
+        this.tracks = tracks;
+      }
+    );
+  }
+  
 }
