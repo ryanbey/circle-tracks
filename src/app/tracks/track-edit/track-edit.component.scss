@@ -15,6 +15,7 @@
    font-size: 2em;
    margin: 0;
    margin-bottom: 1em;
+   color: var(--white);
 }
 
 #track-edit-form {
@@ -35,3 +36,9 @@
    align-items: center;
    margin-bottom: .5em;
 }
+
+// Makes arrows in number imput larger (only works in Chrome)
+input[type=number]::-webkit-inner-spin-button {
+   width: 35px;
+   height: 35px;
+ }

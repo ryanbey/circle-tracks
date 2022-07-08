@@ -46,7 +46,7 @@ label {
    margin-right: 1em;
 }
 
-input {
+input, select, option {
    font-family: "Poppins", sans-serif;
    font-weight: 300;
    color: var(--white);
@@ -56,7 +56,8 @@ input {
    border-radius: var(--bradius);
    padding: .5em;
    font-size: 1em;
-   width: 400px;
+   width: 350px;
+   box-sizing: content-box; // Fixes select element width
    &:focus {
       outline: solid 2px var(--blue);
    }

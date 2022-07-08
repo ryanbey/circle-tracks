@@ -1,18 +1,50 @@
 <div class="track-edit-container">
-   <h2 class="track-name">Track Name</h2>
+   <h2 class="track-name">Add Track</h2>
    <form id="track-edit-form" action="">
+      <!-- Entries -->
       <div class="form-entry">
          <label for="track-name">Name:</label>
-         <input class="help" type="text">         
+         <input type="text" placeholder="Track Name">
       </div>
       <div class="form-entry">
-         <label for="track-name">Length (mi):</label>
-         <input class="help" type="text">         
+         <label for="track-built">Built:</label>
+         <input type="text" placeholder="Year">
       </div>
       <div class="form-entry">
-         <label for="track-name">Turns:</label>
-         <input class="help" type="text">         
+         <label for="track-length">Length:</label>
+         <input type="text" placeholder="Miles">
       </div>
+      <div class="form-entry">
+         <label for="track-surface">Surface: </label>
+         <select name="track-surface" id="track-surface" >
+            <option value="" disabled selected hidden>Choose Surface</option>
+            <option value="asphalt">Asphalt</option>
+            <option value="concrete">Concrete</option>
+            <option value="dirt">Dirt</option>
+         </select>
+      </div>
+      <div class="form-entry">
+         <label for="track-turns">Turns:</label>
+         <input type="number" placeholder="Number of turns">
+      </div>
+      <div class="form-entry">
+         <label for="track-banking">Banking:</label>
+         <input type="text" placeholder="Degrees">
+      </div>
+      <div class="form-entry">
+         <label for="track-capacity">Capacity:</label>
+         <input type="text" placeholder="Seating capacity">
+      </div>
+      <div class="form-entry">
+         <label for="track-map-url">Map URL:</label>
+         <input type="text" value="assets/images/track-maps/">
+      </div>
+      <div class="form-entry">
+         <label for="track-image-url">Image URL:</label>
+         <input type="text" value="assets/images/track-images/">
+      </div>
+
+      <!-- Buttons -->
       <div class="track-edit-buttons">
          <button class="form-button form-button-blue" type="submit">Edit</button>
          <button class="form-button form-button-notblue" type="button">Cancel</button>

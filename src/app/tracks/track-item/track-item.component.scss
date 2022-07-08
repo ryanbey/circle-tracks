@@ -3,6 +3,7 @@
    align-items: center;
    cursor: pointer;
    transition: 150ms;
+   text-decoration: none;
    &:hover {
       background-color: var(--gray);
    }
