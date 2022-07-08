@@ -50,8 +50,8 @@ router.post("/", (req, res, next) => {
     turns: req.body.turns,
     banking: req.body.banking,
     capacity: req.body.capacity,
-    mapUrl: req.body.mapUrl,
-    imageUrl: req.body.imageUrl,
+    trackMapUrl: req.body.trackMapUrl,
+    trackImageUrl: req.body.trackImageUrl,
   });
 
   track
@@ -81,8 +81,8 @@ router.put("/:id", (req, res, next) => {
       track.turns = req.body.turns,
       track.banking = req.body.banking,
       track.capacity = req.body.capacity,
-      track.mapUrl = req.body.mapUrl,
-      track.imageUrl = req.body.imageUrl,
+      track.trackMapUrl = req.body.trackMapUrl,
+      track.trackImageUrl = req.body.trackImageUrl,
 
       Track.updateOne({ id: req.params.id }, track)
         .then((res) => {

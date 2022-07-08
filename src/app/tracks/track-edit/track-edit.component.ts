@@ -51,8 +51,8 @@ export class TrackEditComponent implements OnInit {
       value.turns,
       value.banking,
       value.capacity,
-      "assets/images/track-maps/" + value.mapUrl,
-      "assets/images/track-images/" + value.imageUrl
+      "assets/images/track-maps/" + value.trackMapUrl,
+      "assets/images/track-images/" + value.trackImageUrl
     );
     if (this.editMode) {
       this.trackService.updateTrack(this.originalTrack, newTrack);

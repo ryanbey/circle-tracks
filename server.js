@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, "dist/circle-tracks")));
 
 // Mapping URL's to routing files
-app.use("/home", index);
+app.use("/", index);
 app.use("/tracks", trackRoutes);
 
 // Establish a connection to the Mongo database

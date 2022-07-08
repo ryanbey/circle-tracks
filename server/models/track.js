@@ -9,8 +9,8 @@ const trackSchema = mongoose.Schema({
   turns: { type: String, required: true },
   banking: { type: String, required: true },
   capacity: { type: String, required: true },
-  mapUrl: { type: String, required: true },
-  imageUrl: { type: String, required: true },
+  trackMapUrl: { type: String, required: true },
+  trackImageUrl: { type: String, required: true },
 });
 
-module.exports = mongoose.model("Contact", trackSchema);
+module.exports = mongoose.model("Track", trackSchema);
