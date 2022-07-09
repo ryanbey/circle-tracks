@@ -12,6 +12,7 @@
    --blue: #1e88e5;
    --blue-darker: #1a65a7;
    --white: white;
+   --white-darker: #aaaaaa;
 }
 
 // Style variables
@@ -40,6 +41,29 @@ a {
    color: var(--white);
 }
 
+.a-button {
+   text-decoration: none;
+   white-space: nowrap;
+   padding: .5em 1em;
+   margin: 0 .5em;
+   cursor: pointer;
+   background-color: var(--blue);
+   border-radius: var(--bradius);
+   transition: var(--transition);
+   &:visited {
+      color: var(--white);
+   }
+   &:hover {
+      background-color: var(--blue-darker);
+   }
+   &-secondary {
+      background-color: var(--lightgray);
+      &:hover {
+         background-color: var(--lightgray-darker);
+      }
+   }
+}
+
 label {
    font-size: 1.1em;
    color: var(--white);
@@ -60,6 +84,27 @@ input, select, option {
    box-sizing: content-box; // Fixes select element width
    &:focus {
       outline: solid 2px var(--blue);
+   }
+}
+
+.track-right-side {
+   background-color: var(--darkgray);
+   text-align: center;
+   padding: 1em;
+   color: var(--lightgray);
+   border-radius: var(--bradius);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.right-side-heading {
+   font-size: 2em;
+   margin: 0;
+   margin-bottom: .5em;
+   color: var(--white);
+   &-smaller {
+      font-size: 1.7em;
    }
 }
 

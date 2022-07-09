@@ -1,0 +1,29 @@
+.track-detail-image {
+  max-width: 70%;
+}
+
+.track-info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin: 2em 0;
+}
+
+.track-info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-title {
+  font-size: 1em;
+  color: var(--white-darker);
+  margin-bottom: -.5em;
+}
+
+.item-value {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--white);
+}

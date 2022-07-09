@@ -1,1 +1,36 @@
-<p>track-detail works!</p>
+<div class="track-right-side">
+    <h2 class="right-side-heading right-side-heading-smaller">{{ track?.name }}</h2>
+    <img class="track-detail-image" [src]="track?.trackMapUrl" alt="Track map image of {{ track?.name }}">
+    
+    <div class="track-info-container">
+      <div class="track-info-item">
+        <span class="item-title">Built</span>
+        <span class="item-value">{{ track?.built }}</span>
+      </div>
+      <div class="track-info-item">
+        <span class="item-title">Length</span>
+        <span class="item-value">{{ track?.length }} mi</span>
+      </div>
+      <div class="track-info-item">
+        <span class="item-title">Surface</span>
+        <span class="item-value">{{ track?.surface }}</span>
+      </div>
+      <div class="track-info-item">
+        <span class="item-title">Turns</span>
+        <span class="item-value">{{ track?.turns }}</span>
+      </div>
+      <div class="track-info-item">
+        <span class="item-title">Banking</span>
+        <span class="item-value">{{ track?.banking }}°</span>
+      </div>
+      <div class="track-info-item">
+        <span class="item-title">Capacity</span>
+        <span class="item-value">{{ track?.capacity | number:'1.0':'en-US' }}</span>
+      </div>
+    </div>
+
+    <div class="track-detail-buttons">
+      <a routerLink="edit" class="a-button">Edit</a>
+      <a class="a-button a-button-secondary">Delete</a>
+    </div> 
+</div>

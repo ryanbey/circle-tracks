@@ -26,22 +26,6 @@
    }
 }
 
-.new-track-button {
-   text-decoration: none;
-   white-space: nowrap;
-   padding: .5em 1em;
-   margin: 0 .5em;
-   background-color: var(--blue);
-   border-radius: var(--bradius);
-   transition: var(--transition);
-   &:visited {
-      color: inherit;
-   }
-   &:hover {
-      background-color: var(--blue-darker);
-   }
-}
-
 .track-list-container {
    background-color: var(--darkgray);
    border-radius: var(--bradius);
