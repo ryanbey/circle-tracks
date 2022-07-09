@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "62c79b589ad33ce944b994b7"
+  },
+  "name": "Daytona International Speedway",
+  "built": "1959",
+  "length": "2.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "31",
+  "capacity": "101500",
+  "id": "1",
+  "trackImageUrl": "assets/images/track-images/temporary.png",
+  "trackMapUrl": "assets/images/track-maps/daytona-thicc.png"
+},{
+  "_id": {
+    "$oid": "62c9f04a3a25146680ef30e7"
+  },
+  "name": "Auto Club Speedway",
+  "built": "1997",
+  "length": "2",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "17",
+  "capacity": "68000",
+  "id": "2",
+  "trackImageUrl": "assets/images/track-images/temporary.png",
+  "trackMapUrl": "assets/images/track-maps/auto-club.png"
+},{
+  "_id": {
+    "$oid": "62c9f04c3a25146680ef30e8"
+  },
+  "name": "Las Vegas Motor Speedway",
+  "built": "1996",
+  "length": "1.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "20",
+  "capacity": "123000",
+  "id": "3",
+  "trackImageUrl": "assets/images/track-images/temporary.png",
+  "trackMapUrl": "assets/images/track-maps/las-vegas.png"
+}]
