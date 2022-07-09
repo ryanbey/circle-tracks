@@ -80,14 +80,14 @@ export class TrackService {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
     // Update database
-    // this.http
-    //   .put('http://localhost:3000/tracks/' + originalTrack.id, newTrack, {
-    //     headers: headers,
-    //   })
-    //   .subscribe((response: Response) => {
-    //     this.tracks[pos] = newTrack;
-    //     this.sortAndSend();
-    //   });
+    this.http
+      .put('http://localhost:3000/tracks/' + originalTrack.id, newTrack, {
+        headers: headers,
+      })
+      .subscribe((response) => {
+        this.tracks[pos] = newTrack;
+        this.sortAndSend();
+      });
   }
 
   // Delete one track
@@ -103,12 +103,12 @@ export class TrackService {
     }
 
     // Delete from database
-    // this.http
-    //   .delete('http://localhost:3000/tracks/' + track.id)
-    //   .subscribe((response: Response) => {
-    //     this.tracks.splice(pos, 1);
-    //     this.sortAndSend();
-    //   });
+    this.http
+      .delete('http://localhost:3000/tracks/' + track.id)
+      .subscribe((response) => {
+        this.tracks.splice(pos, 1);
+        this.sortAndSend();
+      });
   }
 
   sortAndSend() {

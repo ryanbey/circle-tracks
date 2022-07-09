@@ -43,7 +43,7 @@ export class TrackEditComponent implements OnInit {
     const value = form.value;
     const newTrack = new Track(
       '', // Object Id populated by MongoDB
-      value.id, // This is having issues when adding a new track
+      '',
       value.name,
       value.built,
       value.length,

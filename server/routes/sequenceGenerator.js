@@ -16,13 +16,21 @@ function SequenceGenerator() {
   });
 }
 
-SequenceGenerator.prototype.nextId = () => {
-  maxTrackId++;
-  updateObject = { maxTrackId: maxTrackId };
-  nextId = maxTrackId;
+SequenceGenerator.prototype.nextId = function (collectionType) {
+  var updateObject = {};
+  var nextId;
 
-  // Originally was just update, not updateOn. Change back if this breaks
-  Sequence.updateOne({ _id: sequenceId }, { $set: updateObject }, function (err) {
+  switch (collectionType) {
+    case "tracks":
+      maxTrackId++;
+      updateObject = { maxTrackId: maxTrackId };
+      nextId = maxTrackId;
+      break;
+    default:
+      return -1;
+  }
+
+  Sequence.update({ _id: sequenceId }, { $set: updateObject }, function (err) {
     if (err) {
       console.log("nextId error = " + err);
       return null;
