@@ -43,7 +43,7 @@ export class TrackEditComponent implements OnInit {
     const value = form.value;
     const newTrack = new Track(
       '', // Object Id populated by MongoDB
-      '',
+      '', // This is currently coming up as NaN no matter what I put in it
       value.name,
       value.built,
       value.length,
@@ -51,9 +51,10 @@ export class TrackEditComponent implements OnInit {
       value.turns,
       value.banking,
       value.capacity,
-      "assets/images/track-maps/" + value.trackMapUrl,
-      "assets/images/track-images/" + value.trackImageUrl
+      "assets/images/track-maps/" + value.mapUrl,
+      "assets/images/track-images/" + value.imageUrl
     );
+    console.log(newTrack); // Currently getting nothing
     if (this.editMode) {
       this.trackService.updateTrack(this.originalTrack, newTrack);
     } else {

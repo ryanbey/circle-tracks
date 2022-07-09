@@ -1,41 +1,44 @@
 <div class="track-right-side">
-   <h2 class="right-side-heading">Add Track</h2>
-   <form id="track-edit-form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+   <div [ngSwitch]="editMode">
+      <h2 class="right-side-heading" *ngSwitchCase="true">Edit Track</h2>
+      <h2 class="right-side-heading" *ngSwitchCase="false">Add Track</h2>
+   </div>
+   <form id="track-edit-form" (ngSubmit)="onSubmit(form)" #form="ngForm">
       <!-- Entries -->
       <div class="form-entry">
-         <label for="track-name">Name:</label>
+         <label for="name">Name:</label>
          <input 
             type="text"
             placeholder="Track Name"
-            name="track-name"
+            name="name"
             [ngModel]="track?.name"
             #name="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="track-built">Built:</label>
+         <label for="built">Built:</label>
          <input 
             type="text"
             placeholder="Year"
-            name="track-built"
+            name="built"
             [ngModel]="track?.built"
             #built="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="track-length">Length:</label>
+         <label for="length">Length:</label>
          <input 
             type="text"
             placeholder="Miles"
-            name="track-length"
+            name="length"
             [ngModel]="track?.length"
             #length="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="track-surface">Surface:</label>
+         <label for="surface">Surface:</label>
          <select
-            name="track-surface"
+            name="surface"
             id="track-surface"
             [ngModel]="track?.surface"
             #surface="ngModel"
@@ -46,59 +49,59 @@
          </select>
       </div>
       <div class="form-entry">
-         <label for="track-turns">Turns:</label>
+         <label for="turns">Turns:</label>
          <input 
             type="number"
             placeholder="Number of turns"
-            name="track-turns"
+            name="turns"
             [ngModel]="track?.turns"
             #turns="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="track-banking">Banking:</label>
+         <label for="banking">Banking:</label>
          <input 
             type="text"
             placeholder="Degrees"
-            name="track-banking"
+            name="banking"
             [ngModel]="track?.banking"
             #banking="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="track-capacity">Capacity:</label>
+         <label for="capacity">Capacity:</label>
          <input 
             type="text"
             placeholder="Seating capacity"
-            name="track-capacity"
+            name="capacity"
             [ngModel]="track?.capacity"
             #capacity="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="track-map-url">Map URL:</label>
+         <label for="mapUrl">Map URL:</label>
          <input 
             type="text"
             placeholder="track-map.png"
-            name="track-map-url"
-            [ngModel]="track?.trackMapUrl"
+            name="trackMapUrl"
+            [ngModel]="track?.mapUrl"
             #trackMapUrl="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="track-image-url">Image URL:</label>
+         <label for="imageUrl">Image URL:</label>
          <input 
             type="text"
             placeholder="track-image.png"
-            name="track-image-url"
-            [ngModel]="track?.trackImageUrl"
+            name="trackImageUrl"
+            [ngModel]="track?.imageUrl"
             #trackImageUrl="ngModel"
             required>
       </div>
 
       <!-- Buttons -->
       <div class="track-edit-buttons">
-         <button class="form-button form-button-blue" type="submit" [disabled]="!f.valid">Edit</button>
+         <button class="form-button form-button-blue" type="submit" [disabled]="!form.valid">Submit</button>
          <button class="form-button form-button-notblue" type="button" (click)="onCancel()">Cancel</button>
       </div>
    </form>
