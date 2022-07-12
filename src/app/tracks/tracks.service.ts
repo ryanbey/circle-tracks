@@ -68,12 +68,9 @@ export class TrackService {
     if (!originalTrack || !newTrack) {
       return;
     }
-    
 
-    const pos = this.tracks.findIndex((d) => {d.id === originalTrack.id;});
-    console.log("pos = " + pos); // BUG: THIS IS RETURNING -1 RIGHT NOW
-    
-    // BUG: STOPPING HERE CURRENTLY
+    const pos = this.tracks.findIndex((d) => d.id === originalTrack.id);
+
     if (pos < 0) {
       return;
     }

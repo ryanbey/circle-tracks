@@ -30,7 +30,6 @@ export class TrackEditComponent implements OnInit {
         this.editMode = true
       }
 
-      // this.editMode = params['id'] != null;
       if (this.id) {
         this.trackService.getTrack(this.id)
           .subscribe((result: { message: String, track: Track }) => {
@@ -41,22 +40,21 @@ export class TrackEditComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    const value = form.value;
     const newTrack = new Track(
       '', // Populated by MongoDB ObjectId
       '', // Populated by sequenceGenerator
-      value.name,
-      value.built,
-      value.length,
-      value.surface,
-      value.turns,
-      value.banking,
-      value.capacity,
-      "assets/images/track-maps/" + value.mapUrl + ".png",
-      "assets/images/track-images/" + value.imageUrl + ".png"
+      form.value.name,
+      form.value.built,
+      form.value.length,
+      form.value.surface,
+      form.value.turns,
+      form.value.banking,
+      form.value.capacity,
+      form.value.mapUrl,
+      form.value.imageUrl
     );
     if (this.editMode) {
-      this.trackService.updateTrack(this.originalTrack, newTrack);
+      this.trackService.updateTrack(this.track, newTrack);
     } else {
       this.trackService.addTrack(newTrack);
     }
@@ -64,6 +62,10 @@ export class TrackEditComponent implements OnInit {
   }
 
   onCancel() {
-    this.router.navigate(['/tracks']);
+    if (this.editMode) {
+      this.router.navigate(['/tracks', this.id]);
+    } else {
+      this.router.navigate(['/tracks']);
+    }
   }
 }
