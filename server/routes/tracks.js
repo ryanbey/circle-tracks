@@ -74,28 +74,27 @@ router.post("/", (req, res, next) => {
 router.put("/:id", (req, res, next) => {
   Track.findOne({ id: req.params.id })
     .then((track) => {
-      track.name = req.body.name,
-      track.built = req.body.built,
-      track.length = req.body.length,
-      track.surface = req.body.surface,
-      track.turns = req.body.turns,
-      track.banking = req.body.banking,
-      track.capacity = req.body.capacity,
-      track.mapUrl = req.body.mapUrl,
-      track.imageUrl = req.body.imageUrl,
-
-      Track.updateOne({ id: req.params.id }, track)
-        .then((res) => {
-          res.status(204).json({
-            message: "Track updated successfully",
+      (track.name = req.body.name),
+        (track.built = req.body.built),
+        (track.length = req.body.length),
+        (track.surface = req.body.surface),
+        (track.turns = req.body.turns),
+        (track.banking = req.body.banking),
+        (track.capacity = req.body.capacity),
+        (track.mapUrl = req.body.mapUrl),
+        (track.imageUrl = req.body.imageUrl),
+        Track.updateOne({ id: req.params.id }, track)
+          .then((res) => {
+            res.status(204).json({
+              message: "Track updated successfully",
+            });
+          })
+          .catch((error) => {
+            res.status(500).json({
+              message: "An error occurred",
+              error: error,
+            });
           });
-        })
-        .catch((error) => {
-          res.status(500).json({
-            message: "An error occurred",
-            error: error,
-          });
-        });
     })
     .catch((error) => {
       res.status(500).json({
@@ -110,12 +109,12 @@ router.delete("/:id", (req, res, next) => {
   Track.findOne({ id: req.params.id })
     .then((track) => {
       Track.deleteOne({ id: req.params.id })
-        .then((res) => {
+        .then(() => {
           res.status(204).json({
             message: "Track deleted successfully",
           });
         })
-        .catch(error => {
+        .catch((error) => {
           res.status(500).json({
             message: "An error occurred",
             error: error,

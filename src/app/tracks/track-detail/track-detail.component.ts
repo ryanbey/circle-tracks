@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Track } from '../track.model';
 import { TrackService } from '../tracks.service';
@@ -19,7 +19,6 @@ export class TrackDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Subscribe to active route, get id from active route, get track with that id
     this.route.params.subscribe((params: Params) => {
       this.id = params['id'];
       this.trackService.getTrack(this.id).subscribe((trackData) => {

@@ -11,7 +11,7 @@ const trackSchema = mongoose.Schema({
   banking: { type: String, required: false },
   capacity: { type: String, required: false },
   mapUrl: { type: String, required: false },
-  imageUrl: { type: String, required: false },
+  imageUrl: { type: String, required: false }
 });
 
 module.exports = mongoose.model("Track", trackSchema);
