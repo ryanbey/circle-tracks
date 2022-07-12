@@ -43,15 +43,15 @@
             [ngModel]="track?.surface"
             #surface="ngModel"
             required>
-            <option value="asphalt">Asphalt</option>
-            <option value="concrete">Concrete</option>
-            <option value="dirt">Dirt</option>
+            <option value="Asphalt">Asphalt</option>
+            <option value="Concrete">Concrete</option>
+            <option value="Dirt">Dirt</option>
          </select>
       </div>
       <div class="form-entry">
          <label for="turns">Turns:</label>
          <input 
-            type="number"
+            type="text"
             placeholder="Number of turns"
             name="turns"
             [ngModel]="track?.turns"
@@ -79,20 +79,20 @@
             required>
       </div>
       <div class="form-entry">
-         <label for="mapUrl">Map URL:</label>
+         <label for="mapUrl">Map Name:</label>
          <input 
             type="text"
-            placeholder="track-map.png"
+            placeholder="track-map"
             name="mapUrl"
             [ngModel]="track?.mapUrl"
             #mapUrl="ngModel"
             required>
       </div>
       <div class="form-entry">
-         <label for="imageUrl">Image URL:</label>
+         <label for="imageUrl">Image Name:</label>
          <input 
             type="text"
-            placeholder="track-image.png"
+            placeholder="track-image"
             name="imageUrl"
             [ngModel]="track?.imageUrl"
             #imageUrl="ngModel"
