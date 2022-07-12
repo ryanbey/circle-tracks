@@ -12,9 +12,7 @@ export class TrackListComponent implements OnInit {
   tracks: Track[] = [];
   subscription: Subscription;
 
-  constructor(private trackService: TrackService) {
-    this.trackService.getTracks();
-  }
+  constructor(private trackService: TrackService) {}
 
   ngOnInit(): void {
     this.subscription = this.trackService.trackListChangedEvent.subscribe(
@@ -22,6 +20,8 @@ export class TrackListComponent implements OnInit {
         this.tracks = tracks;
       }
     );
+
+    this.trackService.getTracks();
   }
   
 }

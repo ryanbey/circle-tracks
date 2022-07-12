@@ -43,7 +43,7 @@ export class TrackEditComponent implements OnInit {
     const value = form.value;
     const newTrack = new Track(
       '', // Object Id populated by MongoDB
-      '500', // This is currently coming up as NaN no matter what I put in it
+      '',
       value.name,
       value.built,
       value.length,

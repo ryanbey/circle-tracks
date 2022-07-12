@@ -115,7 +115,7 @@ router.delete("/:id", (req, res, next) => {
             message: "Track deleted successfully",
           });
         })
-        .catch((error) => {
+        .catch(error => {
           res.status(500).json({
             message: "An error occurred",
             error: error,
