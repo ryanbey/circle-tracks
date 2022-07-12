@@ -40,24 +40,44 @@ export class TrackEditComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    const newTrack = new Track(
-      '', // Populated by MongoDB ObjectId
-      '', // Populated by sequenceGenerator
-      form.value.name,
-      form.value.built,
-      form.value.length,
-      form.value.surface,
-      form.value.turns,
-      form.value.banking,
-      form.value.capacity,
-      form.value.mapUrl,
-      form.value.imageUrl
-    );
-    if (this.editMode) {
+    let newTrack: Track;
+
+    // Editing a track
+    if(this.editMode) {
+      newTrack = new Track(
+        '', // Populated by MongoDB ObjectId
+        '', // Populated by sequenceGenerator
+        form.value.name,
+        form.value.built,
+        form.value.length,
+        form.value.surface,
+        form.value.turns,
+        form.value.banking,
+        form.value.capacity,
+        form.value.mapUrl,
+        form.value.imageUrl
+      );
       this.trackService.updateTrack(this.track, newTrack);
-    } else {
+    }
+
+    // Adding a new track
+    if (!this.editMode) {
+      newTrack = new Track(
+        '', // Populated by MongoDB ObjectId
+        '', // Populated by sequenceGenerator
+        form.value.name,
+        form.value.built,
+        form.value.length,
+        form.value.surface,
+        form.value.turns,
+        form.value.banking,
+        form.value.capacity,
+        "assets/images/track-maps/" + form.value.mapUrl + ".png",
+        "assets/images/track-maps/" + form.value.imageUrl + ".png"
+      );
       this.trackService.addTrack(newTrack);
     }
+    
     this.onCancel();
   }
 
