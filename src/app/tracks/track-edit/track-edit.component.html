@@ -23,6 +23,7 @@
             name="built"
             [ngModel]="track?.built"
             #built="ngModel"
+            maxlength="4"
             required>
       </div>
       <div class="form-entry">
@@ -34,19 +35,6 @@
             [ngModel]="track?.length"
             #length="ngModel"
             required>
-      </div>
-      <div class="form-entry">
-         <label for="surface">Surface:</label>
-         <select
-            name="surface"
-            id="track-surface"
-            [ngModel]="track?.surface"
-            #surface="ngModel"
-            required>
-            <option value="Asphalt">Asphalt</option>
-            <option value="Concrete">Concrete</option>
-            <option value="Dirt">Dirt</option>
-         </select>
       </div>
       <div class="form-entry">
          <label for="turns">Turns:</label>
@@ -77,6 +65,35 @@
             [ngModel]="track?.capacity"
             #capacity="ngModel"
             required>
+      </div>
+      <div class="form-entry">
+         <label for="surface">Surface:</label>
+         <select
+            name="surface"
+            id="track-surface"
+            [ngModel]="track?.surface"
+            #surface="ngModel"
+            required>
+            <option value="Asphalt">Asphalt</option>
+            <option value="Concrete">Concrete</option>
+            <option value="Dirt">Dirt</option>
+         </select>
+      </div>
+      <div class="form-entry">
+         <label for="category">Category:</label>
+         <select
+            name="category"
+            id="track-category"
+            [ngModel]="track?.category"
+            #category="ngModel"
+            required>
+            <option value="Short Tracks">Short Tracks</option>
+            <option value="Intermediates">Intermediates</option>
+            <option value="Superspeedways">Superspeedways</option>
+            <option value="Road Courses">Road Courses</option>
+            <option value="Dirt Tracks">Dirt Tracks</option>
+            <option value="Legacy Tracks">Legacy Tracks</option>
+         </select>
       </div>
       <div class="form-entry">
          <label for="mapUrl">Map Name:</label>

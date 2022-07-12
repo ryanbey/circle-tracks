@@ -54,6 +54,7 @@ export class TrackEditComponent implements OnInit {
         form.value.turns,
         form.value.banking,
         form.value.capacity,
+        form.value.category,
         form.value.mapUrl,
         form.value.imageUrl
       );
@@ -72,6 +73,7 @@ export class TrackEditComponent implements OnInit {
         form.value.turns,
         form.value.banking,
         form.value.capacity,
+        form.value.category,
         "assets/images/track-maps/" + form.value.mapUrl + ".png",
         "assets/images/track-maps/" + form.value.imageUrl + ".png"
       );

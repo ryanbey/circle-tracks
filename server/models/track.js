@@ -10,6 +10,7 @@ const trackSchema = mongoose.Schema({
   turns: { type: String, required: false },
   banking: { type: String, required: false },
   capacity: { type: String, required: false },
+  category: { type: String, required: false },
   mapUrl: { type: String, required: false },
   imageUrl: { type: String, required: false }
 });
