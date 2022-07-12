@@ -73,28 +73,29 @@ router.post("/", (req, res, next) => {
 // Edit one track
 router.put("/:id", (req, res, next) => {
   Track.findOne({ id: req.params.id })
-    .then((track) => {
-      (track.name = req.body.name),
-        (track.built = req.body.built),
-        (track.length = req.body.length),
-        (track.surface = req.body.surface),
-        (track.turns = req.body.turns),
-        (track.banking = req.body.banking),
-        (track.capacity = req.body.capacity),
-        (track.mapUrl = req.body.mapUrl),
-        (track.imageUrl = req.body.imageUrl),
-        Track.updateOne({ id: req.params.id }, track)
-          .then((res) => {
-            res.status(204).json({
-              message: "Track updated successfully",
-            });
-          })
-          .catch((error) => {
-            res.status(500).json({
-              message: "An error occurred",
-              error: error,
-            });
+    .then(track => {
+      track.name = req.body.name,
+      track.built = req.body.built,
+      track.length = req.body.length,
+      track.surface = req.body.surface,
+      track.turns = req.body.turns,
+      track.banking = req.body.banking,
+      track.capacity = req.body.capacity,
+      track.mapUrl = req.body.mapUrl,
+      track.imageUrl = req.body.imageUrl;
+
+      Track.updateOne({ id: req.params.id }, track)
+        .then(() => {
+          res.status(204).json({
+            message: "Track updated successfully",
           });
+        })
+        .catch((error) => {
+          res.status(500).json({
+            message: "An error occurred",
+            error: error,
+          });
+        });
     })
     .catch((error) => {
       res.status(500).json({

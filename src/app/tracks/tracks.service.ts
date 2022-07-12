@@ -17,7 +17,9 @@ export class TrackService {
   // Get all tracks
   getTracks() {
     this.http
-      .get<{ message: String; tracks: Track[] }>('http://localhost:3000/tracks/')
+      .get<{ message: String; tracks: Track[] }>(
+        'http://localhost:3000/tracks/'
+      )
       .subscribe(
         (responseData) => {
           this.tracks = responseData.tracks;
@@ -31,7 +33,7 @@ export class TrackService {
 
   // Get one track
   getTrack(id: string) {
-    return this.http.get<{ message: string; track: Track }>(
+    return this.http.get<{ message: String; track: Track }>(
       'http://localhost:3000/tracks/' + id
     );
   }
@@ -66,9 +68,12 @@ export class TrackService {
     if (!originalTrack || !newTrack) {
       return;
     }
+    
 
-    const pos = this.tracks.findIndex((d) => d.id === originalTrack.id);
-
+    const pos = this.tracks.findIndex((d) => {d.id === originalTrack.id;});
+    console.log("pos = " + pos); // BUG: THIS IS RETURNING -1 RIGHT NOW
+    
+    // BUG: STOPPING HERE CURRENTLY
     if (pos < 0) {
       return;
     }

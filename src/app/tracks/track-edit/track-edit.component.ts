@@ -22,21 +22,22 @@ export class TrackEditComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    // Fill in form fields based on id in URL
     this.route.params.subscribe((params: Params) => {
-      const id = params['id'];
-      if (id === undefined || id === null) {
-        this.editMode = false;
-        return;
+      this.id = params['id']
+
+      if (params['id'] != null) {
+        this.editMode = true
       }
 
-      this.originalTrack = this.trackService.getTrack(id);
-
-      if (this.originalTrack === undefined || this.originalTrack === null) {
-        return;
+      // this.editMode = params['id'] != null;
+      if (this.id) {
+        this.trackService.getTrack(this.id)
+          .subscribe((result: { message: String, track: Track }) => {
+            this.track = result.track
+          })
       }
-      this.editMode = true;
-      this.track = JSON.parse(JSON.stringify(this.originalTrack));
-    });
+    })
   }
 
   onSubmit(form: NgForm) {
@@ -54,7 +55,6 @@ export class TrackEditComponent implements OnInit {
       "assets/images/track-maps/" + value.mapUrl + ".png",
       "assets/images/track-images/" + value.imageUrl + ".png"
     );
-    console.log(newTrack); // Currently getting nothing
     if (this.editMode) {
       this.trackService.updateTrack(this.originalTrack, newTrack);
     } else {
@@ -65,15 +65,5 @@ export class TrackEditComponent implements OnInit {
 
   onCancel() {
     this.router.navigate(['/tracks']);
-  }
-
-  isInvalidTrack(newTrack: Track) {
-    if (!newTrack) {
-      return true;
-    }
-    if (this.track && newTrack.id === this.track.id) {
-      return true;
-    }
-    return false;
   }
 }
