@@ -42,8 +42,8 @@ export class TrackEditComponent implements OnInit {
   onSubmit(form: NgForm) {
     const value = form.value;
     const newTrack = new Track(
-      '', // Object Id populated by MongoDB
-      '',
+      '', // Populated by MongoDB ObjectId
+      '', // Populated by sequenceGenerator
       value.name,
       value.built,
       value.length,
