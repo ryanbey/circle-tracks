@@ -38,6 +38,23 @@ router.get("/:id", (req, res, next) => {
     });
 });
 
+// Get one track by category
+router.get("/", (req, res, next) => {
+  Track.find({"category":"Intermediates"})
+    .then((tracks) => {
+      res.status(200).json({
+        message: "Category fetched successfully!",
+        tracks: tracks,
+      });
+    })
+    .catch((error) => {
+      res.status(500).json({
+        message: "An error occurred",
+        error: error,
+      });
+    });
+});
+
 // Add one track
 router.post("/", (req, res, next) => {
   const maxTrackId = sequenceGenerator.nextId("tracks");
