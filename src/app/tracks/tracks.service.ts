@@ -38,22 +38,22 @@ export class TrackService {
     );
   }
 
-  // Get tracks by category
-  getTracksByCategory(category: string) {
-    this.http
-      .get<{ message: String; tracks: Track[] }>(
-        'http://localhost:3000/tracks/' 
-      )
-      .subscribe(
-        (responseData) => {
-          this.tracks = responseData.tracks;
-          this.sortAndSend();
-        },
-        (error: any) => {
-          console.log(error);
-        }
-      );
-  }
+  // // Get tracks by category
+  // getTracksByCategory(category: string) {
+  //   this.http
+  //     .get<{ message: String; tracks: Track[] }>(
+  //       'http://localhost:3000/tracks/' 
+  //     )
+  //     .subscribe(
+  //       (responseData) => {
+  //         this.tracks = responseData.tracks;
+  //         this.sortAndSend();
+  //       },
+  //       (error: any) => {
+  //         console.log(error);
+  //       }
+  //     );
+  // }
 
   // Add a new track to the track list
   addTrack(track: Track) {
