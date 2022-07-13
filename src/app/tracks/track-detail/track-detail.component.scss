@@ -1,12 +1,30 @@
 .track-detail-image {
-  max-width: 70%;
+  // max-width: 70%;
+  max-width: 100%;
+  border-top-left-radius: var(--bradius);
+  border-top-right-radius: var(--bradius) ;
+}
+
+.right-side-heading {
+  position: relative;
+  top: -50px;
+  font-size: 2em;
+  width: 100%;
+  margin: 0;
+  margin-bottom: .5em;
+  color: var(--white);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .5));
+  &-smaller {
+     font-size: 1.7em;
+  }
 }
 
 .track-info-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
-  margin: 2em 0;
+  margin-top: -1.5em;
+  margin-bottom: 3em;
 }
 
 .track-info-item {
@@ -26,4 +44,8 @@
   font-size: 2em;
   font-weight: 500;
   color: var(--white);
+}
+
+.track-detail-buttons {
+  margin-bottom: 1.5em;
 }

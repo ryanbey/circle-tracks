@@ -41,6 +41,7 @@ a {
    color: var(--white);
 }
 
+// Used by track detail and track edit
 .a-button {
    text-decoration: none;
    white-space: nowrap;
@@ -87,27 +88,19 @@ input, select, option {
    }
 }
 
+// Used by track detail and track edit
 .track-right-side {
    background-color: var(--darkgray);
    text-align: center;
-   padding: 1em;
+   // padding: 1em;
    color: var(--lightgray);
    border-radius: var(--bradius);
    display: flex;
    flex-direction: column;
    align-items: center;
-}
+ }
 
-.right-side-heading {
-   font-size: 2em;
-   margin: 0;
-   margin-bottom: .5em;
-   color: var(--white);
-   &-smaller {
-      font-size: 1.7em;
-   }
-}
-
+ // Used by track detail and track edit
 .form-button {
    font-family: "Poppins", sans-serif;
    font-size: 1.1em;
