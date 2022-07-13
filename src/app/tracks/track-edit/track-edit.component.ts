@@ -75,7 +75,7 @@ export class TrackEditComponent implements OnInit {
         form.value.capacity,
         form.value.category,
         "assets/images/track-maps/" + form.value.mapUrl + ".png",
-        "assets/images/track-maps/" + form.value.imageUrl + ".png"
+        "assets/images/track-images/" + form.value.imageUrl + ".png"
       );
       this.trackService.addTrack(newTrack);
     }
