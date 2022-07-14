@@ -1,0 +1,27 @@
+.contact-container {
+  background-color: var(--darkgray);
+  padding: 1em;
+  border-radius: var(--bradius);
+  max-width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.ct-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.form-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.form-button {
+  margin: 0 auto;
+  margin-top: 1em;
+}

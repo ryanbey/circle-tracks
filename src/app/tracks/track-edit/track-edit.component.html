@@ -3,7 +3,7 @@
       <h2 class="right-side-heading" *ngSwitchCase="true">Edit Track</h2>
       <h2 class="right-side-heading" *ngSwitchCase="false">Add Track</h2>
    </div>
-   <form id="track-edit-form" (ngSubmit)="onSubmit(form)" #form="ngForm">
+   <form class="ct-form" (ngSubmit)="onSubmit(form)" #form="ngForm">
       <!-- Entries -->
       <div class="form-entry">
          <label for="name">Name:</label>
