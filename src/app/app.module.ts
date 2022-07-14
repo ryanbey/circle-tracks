@@ -15,7 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { TrackEditComponent } from './tracks/track-edit/track-edit.component';
 import { TrackEmptyComponent } from './tracks/track-empty/track-empty.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
