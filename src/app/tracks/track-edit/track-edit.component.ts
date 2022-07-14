@@ -84,10 +84,12 @@ export class TrackEditComponent implements OnInit {
   }
 
   onCancel() {
-    if (this.editMode) {
-      this.router.navigate(['/tracks', this.id]);
-    } else {
-      this.router.navigate(['/tracks']);
-    }
+    // if (this.editMode) {
+    //   this.router.navigate(['/tracks', this.id]);
+    // } else {
+    //   this.router.navigate(['/tracks']);
+    // }
+    // Above works great, but track detail component doesn't update before the component loads
+    this.router.navigate(['/tracks']);
   }
 }
