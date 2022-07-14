@@ -1,0 +1,13 @@
+HIGH
+- Either get categories working or add a search bar to track list
+
+MEDIUM
+- Add track detail images for all tracks
+
+LOW
+- Fix header image responsiveness
+- Replace Gen6 images with NextGen (including header)
+- Add animation to navbar hover
+- Add gradient to track detail image for better readability
+- Improve track edit input element responsiveness (keep all fields the same size)
+- Scroll bar styling
