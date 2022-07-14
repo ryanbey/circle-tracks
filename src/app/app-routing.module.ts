@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   // Tracks page
   { path: 'tracks', component: TracksComponent, children: [
-    { path: 'category', component: TrackListComponent },
     { path: '', component: TrackEmptyComponent },
     { path: 'new', component: TrackEditComponent },
     { path: ':id', component: TrackDetailComponent },

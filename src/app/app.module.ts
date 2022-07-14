@@ -16,6 +16,7 @@ import { TrackEditComponent } from './tracks/track-edit/track-edit.component';
 import { TrackEmptyComponent } from './tracks/track-empty/track-empty.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TracksFilterPipe } from './tracks/tracks-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TracksComponent,
     ContactComponent,
     TrackEditComponent,
-    TrackEmptyComponent
+    TrackEmptyComponent,
+    TracksFilterPipe
   ],
   imports: [
     BrowserModule,

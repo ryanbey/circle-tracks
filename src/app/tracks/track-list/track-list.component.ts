@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Category } from '../category.model';
 import { Track } from '../track.model';
 import { TrackService } from '../tracks.service';
 
@@ -12,6 +11,7 @@ import { TrackService } from '../tracks.service';
 export class TrackListComponent implements OnInit {
   tracks: Track[] = [];
   subscription: Subscription;
+  term: string;
 
   constructor(private trackService: TrackService) {}
 
@@ -23,6 +23,14 @@ export class TrackListComponent implements OnInit {
     );
 
     this.trackService.getTracks();
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+
+  search(value: string) {
+    this.term = value;
   }
   
 }
