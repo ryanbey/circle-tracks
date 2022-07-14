@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { Category } from '../category.model';
 import { Track } from '../track.model';
 import { TrackService } from '../tracks.service';
 
@@ -23,24 +24,5 @@ export class TrackListComponent implements OnInit {
 
     this.trackService.getTracks();
   }
-
-  // categorySelected(category: string) {
-  //   switch(category) {
-  //     case 'all': this.trackService.getTracksByCategory('all');
-  //     break;
-  //     case 'short': this.trackService.getTracksByCategory('short');
-  //     break;
-  //     case 'intermediates': this.trackService.getTracksByCategory('intermediates');
-  //     break;
-  //     case 'dirt': this.trackService.getTracksByCategory('dirt');
-  //     break;
-  //     case 'superspeedways': this.trackService.getTracksByCategory('superspeedways');
-  //     break;
-  //     case 'road': this.trackService.getTracksByCategory('road');
-  //     break;
-  //     case 'legacy': this.trackService.getTracksByCategory('legacy');
-  //     break;
-  //   }
-  // }
   
 }

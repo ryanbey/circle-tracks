@@ -37,24 +37,7 @@ export class TrackService {
       'http://localhost:3000/tracks/' + id
     );
   }
-
-  // // Get tracks by category
-  // getTracksByCategory(category: string) {
-  //   this.http
-  //     .get<{ message: String; tracks: Track[] }>(
-  //       'http://localhost:3000/tracks/' 
-  //     )
-  //     .subscribe(
-  //       (responseData) => {
-  //         this.tracks = responseData.tracks;
-  //         this.sortAndSend();
-  //       },
-  //       (error: any) => {
-  //         console.log(error);
-  //       }
-  //     );
-  // }
-
+  
   // Add a new track to the track list
   addTrack(track: Track) {
     if (!track) {
