@@ -10,8 +10,9 @@
   "banking": "31",
   "capacity": "101500",
   "id": "1",
+  "category": "Superspeedway",
   "imageUrl": "assets/images/track-images/temporary.png",
-  "mapUrl": "assets/images/track-maps/daytona-thicc.png"
+  "mapUrl": "assets/images/track-maps/daytona.png"
 },{
   "_id": {
     "$oid": "62c9f04a3a25146680ef30e7"
@@ -24,6 +25,7 @@
   "banking": "17",
   "capacity": "68000",
   "id": "2",
+  "category": "Intermediate",
   "imageUrl": "assets/images/track-images/temporary.png",
   "mapUrl": "assets/images/track-maps/auto-club.png"
 },{
@@ -38,6 +40,7 @@
   "banking": "20",
   "capacity": "123000",
   "id": "3",
+  "category": "Intermediate",
   "imageUrl": "assets/images/track-images/temporary.png",
   "mapUrl": "assets/images/track-maps/las-vegas.png"
 }]
