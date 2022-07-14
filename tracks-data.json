@@ -1,0 +1,478 @@
+[{
+  "_id": {
+    "$oid": "62c79b589ad33ce944b994b7"
+  },
+  "name": "Daytona International Speedway",
+  "built": "1959",
+  "length": "2.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "31",
+  "capacity": "101500",
+  "id": "1",
+  "imageUrl": "assets/images/track-images/daytona.png",
+  "mapUrl": "assets/images/track-maps/daytona.png",
+  "category": "Superspeedways"
+},{
+  "_id": {
+    "$oid": "62c9f04a3a25146680ef30e7"
+  },
+  "name": "Auto Club Speedway",
+  "built": "1997",
+  "length": "2",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "17",
+  "capacity": "68000",
+  "id": "2",
+  "imageUrl": "assets/images/track-images/auto-club.jpg",
+  "mapUrl": "assets/images/track-maps/auto-club.png",
+  "category": "Intermediates"
+},{
+  "_id": {
+    "$oid": "62c9f04c3a25146680ef30e8"
+  },
+  "name": "Las Vegas Motor Speedway",
+  "built": "1996",
+  "length": "1.5",
+  "surface": "Dirt",
+  "turns": "4",
+  "banking": "20",
+  "capacity": "123000",
+  "id": "3",
+  "imageUrl": "assets/images/track-images/las-vegas.jpg",
+  "mapUrl": "assets/images/track-maps/las-vegas.png",
+  "category": "Intermediates"
+},{
+  "_id": {
+    "$oid": "62ce0414d22525733bfbbec9"
+  },
+  "id": "110",
+  "name": "Bristol Motor Speedway",
+  "built": "1961",
+  "length": ".53",
+  "surface": "Concrete",
+  "turns": "4",
+  "banking": "30",
+  "capacity": "162000",
+  "mapUrl": "assets/images/track-maps/bristol.png",
+  "imageUrl": "assets/images/track-images/bristol.jpg",
+  "__v": 0,
+  "category": "Short Tracks"
+},{
+  "_id": {
+    "$oid": "62ce41a87e17e5f30d8b95d5"
+  },
+  "id": "114",
+  "name": "Atlanta Motor Speedway",
+  "built": "1960",
+  "length": "1.54",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "28",
+  "capacity": "71000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/atlanta.png",
+  "imageUrl": "assets/images/track-images/atlanta.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ce42407e17e5f30d8b95fa"
+  },
+  "id": "115",
+  "name": "Charlotte Motor Speedway",
+  "built": "1960",
+  "length": "1.5",
+  "surface": "Asphalt",
+  "turns": "7",
+  "banking": "24",
+  "capacity": "89000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/charlotte.png",
+  "imageUrl": "assets/images/track-images/charlotte.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08aa6a657898290245773"
+  },
+  "id": "116",
+  "name": "Charlotte ROVAL",
+  "built": "2018",
+  "length": "2.28",
+  "surface": "Asphalt",
+  "turns": "13",
+  "banking": "24",
+  "capacity": "89000",
+  "category": "Road Courses",
+  "mapUrl": "assets/images/track-maps/charlotte-roval.png",
+  "imageUrl": "assets/images/track-images/charlotte-roval.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08adca657898290245777"
+  },
+  "id": "117",
+  "name": "Chicagoland Speedway",
+  "built": "2001",
+  "length": "1.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "18",
+  "capacity": "55000",
+  "category": "Legacy Tracks",
+  "mapUrl": "assets/images/track-maps/chicagoland.png",
+  "imageUrl": "assets/images/track-images/chicagoland.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08afca65789829024577a"
+  },
+  "id": "118",
+  "name": "Darlington Raceway",
+  "built": "1950",
+  "length": "1.36",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "25",
+  "capacity": "58000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/darlington.png",
+  "imageUrl": "assets/images/track-images/darlington.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08b20a657898290245783"
+  },
+  "id": "119",
+  "name": "Dover International Speedway",
+  "built": "1969",
+  "length": "1",
+  "surface": "Concrete",
+  "turns": "4",
+  "banking": "24",
+  "capacity": "96000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/dover.png",
+  "imageUrl": "assets/images/track-images/dover.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08b37a657898290245786"
+  },
+  "id": "120",
+  "name": "Homestead Miami Speedway",
+  "built": "1999",
+  "length": "1.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "20",
+  "capacity": "46000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/homestead.png",
+  "imageUrl": "assets/images/track-images/homestead.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08b6da657898290245789"
+  },
+  "id": "121",
+  "name": "Indianapolis Motor Speedway",
+  "built": "1909",
+  "length": "2.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "9",
+  "capacity": "257000",
+  "category": "Superspeedways",
+  "mapUrl": "assets/images/track-maps/indianapolis.png",
+  "imageUrl": "assets/images/track-images/indianapolis.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08b84a65789829024578c"
+  },
+  "id": "122",
+  "name": "Kansas Speedway",
+  "built": "2001",
+  "length": "1.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "15",
+  "capacity": "74000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/kansas.png",
+  "imageUrl": "assets/images/track-images/kansas.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08ba8a657898290245790"
+  },
+  "id": "123",
+  "name": "Las Vegas Motor Speedway",
+  "built": "1996",
+  "length": "1.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "20",
+  "capacity": "123000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/las-vegas.png",
+  "imageUrl": "assets/images/track-images/las-vegas.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08bc3a657898290245793"
+  },
+  "id": "124",
+  "name": "Michigan International Speedway",
+  "built": "1968",
+  "length": "2",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "18",
+  "capacity": "71000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/michigan.png",
+  "imageUrl": "assets/images/track-images/michigan.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08be0a657898290245796"
+  },
+  "id": "125",
+  "name": "Nashville Superspeedway",
+  "built": "2001",
+  "length": "1.33",
+  "surface": "Concrete",
+  "turns": "4",
+  "banking": "14",
+  "capacity": "25000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/nashville.png",
+  "imageUrl": "assets/images/track-images/nashville.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08c06a657898290245799"
+  },
+  "id": "126",
+  "name": "New Hampshire Motor Speedway",
+  "built": "1990",
+  "length": "1",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "7",
+  "capacity": "88000",
+  "category": "Short Tracks",
+  "mapUrl": "assets/images/track-maps/new-hampshire.png",
+  "imageUrl": "assets/images/track-images/new-hampshire.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08c27a65789829024579c"
+  },
+  "id": "127",
+  "name": "Phoenix Raceway",
+  "built": "1964",
+  "length": "1",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "11",
+  "capacity": "51000",
+  "category": "Short Tracks",
+  "mapUrl": "assets/images/track-maps/phoenix.png",
+  "imageUrl": "assets/images/track-images/phoenix.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08c3ea65789829024579f"
+  },
+  "id": "128",
+  "name": "Texas Motor Speedway",
+  "built": "1995",
+  "length": "1.5",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "24",
+  "capacity": "137000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/texas.png",
+  "imageUrl": "assets/images/track-images/texas.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08c60a6578982902457a2"
+  },
+  "id": "129",
+  "name": "Worldwide Technology Raceway",
+  "built": "1967",
+  "length": "1.25",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "11",
+  "capacity": "78000",
+  "category": "Intermediates",
+  "mapUrl": "assets/images/track-maps/gateway.png",
+  "imageUrl": "assets/images/track-images/gateway.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08cbfa6578982902457b0"
+  },
+  "id": "130",
+  "name": "Daytona Road Course",
+  "built": "1959",
+  "length": "3.56",
+  "surface": "Asphalt",
+  "turns": "14",
+  "banking": "31",
+  "capacity": "101500",
+  "category": "Road Courses",
+  "mapUrl": "assets/images/track-maps/daytona-road.png",
+  "imageUrl": "assets/images/track-images/daytona-road.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08cdca6578982902457b4"
+  },
+  "id": "131",
+  "name": "Talladega Superspeedway",
+  "built": "1969",
+  "length": "2.66",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "33",
+  "capacity": "80500",
+  "category": "Superspeedways",
+  "mapUrl": "assets/images/track-maps/talladega.png",
+  "imageUrl": "assets/images/track-images/talladega.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08d06a6578982902457b8"
+  },
+  "id": "132",
+  "name": "Martinsville Raceway",
+  "built": "1947",
+  "length": ".53",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "12",
+  "capacity": "44000",
+  "category": "Short Tracks",
+  "mapUrl": "assets/images/track-maps/martinsville.png",
+  "imageUrl": "assets/images/track-images/martinsville.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08d2ba6578982902457bb"
+  },
+  "id": "133",
+  "name": "Richmond Raceway",
+  "built": "1946",
+  "length": ".75",
+  "surface": "Asphalt",
+  "turns": "4",
+  "banking": "14",
+  "capacity": "51000",
+  "category": "Short Tracks",
+  "mapUrl": "assets/images/track-maps/richmond.png",
+  "imageUrl": "assets/images/track-images/richmond.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08d4ca6578982902457bf"
+  },
+  "id": "134",
+  "name": "Circuit of the Americas",
+  "built": "2012",
+  "length": "3.43",
+  "surface": "Asphalt",
+  "turns": "20",
+  "banking": "10",
+  "capacity": "120000",
+  "category": "Road Courses",
+  "mapUrl": "assets/images/track-maps/cota.png",
+  "imageUrl": "assets/images/track-images/cota.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08d7ca6578982902457c2"
+  },
+  "id": "135",
+  "name": "Road America",
+  "built": "1955",
+  "length": "4.04",
+  "surface": "Asphalt",
+  "turns": "14",
+  "banking": "6",
+  "capacity": "100000",
+  "category": "Road Courses",
+  "mapUrl": "assets/images/track-maps/road-america.png",
+  "imageUrl": "assets/images/track-images/road-america.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08d9aa6578982902457c5"
+  },
+  "id": "136",
+  "name": "Sonoma Raceway",
+  "built": "1968",
+  "length": "2.53",
+  "surface": "Asphalt",
+  "turns": "12",
+  "banking": "8",
+  "capacity": "47000",
+  "category": "Road Courses",
+  "mapUrl": "assets/images/track-maps/sonoma.png",
+  "imageUrl": "assets/images/track-images/sonoma.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08dc5a6578982902457c8"
+  },
+  "id": "137",
+  "name": "Watkins Glen International",
+  "built": "1968",
+  "length": "2.45",
+  "surface": "Asphalt",
+  "turns": "7",
+  "banking": "11",
+  "capacity": "38900",
+  "category": "Road Courses",
+  "mapUrl": "assets/images/track-maps/watkins-glen.png",
+  "imageUrl": "assets/images/track-images/watkins-glen.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08deba6578982902457cb"
+  },
+  "id": "138",
+  "name": "Bristol Dirt",
+  "built": "2020",
+  "length": ".53",
+  "surface": "Dirt",
+  "turns": "4",
+  "banking": "18",
+  "capacity": "162000",
+  "category": "Dirt Tracks",
+  "mapUrl": "assets/images/track-maps/bristol.png",
+  "imageUrl": "assets/images/track-images/bristol-dirt.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d08e2aa6578982902457d1"
+  },
+  "id": "139",
+  "name": "Eldora Speedway",
+  "built": "1954",
+  "length": ".5",
+  "surface": "Dirt",
+  "turns": "4",
+  "banking": "24",
+  "capacity": "30000",
+  "category": "Dirt Tracks",
+  "mapUrl": "assets/images/track-maps/eldora.png",
+  "imageUrl": "assets/images/track-images/eldora.jpg",
+  "__v": 0
+}]

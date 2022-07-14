@@ -32,5 +32,13 @@ export class TrackListComponent implements OnInit {
   search(value: string) {
     this.term = value;
   }
+
+  scrollToTop(): void {
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+});
+  }
   
 }

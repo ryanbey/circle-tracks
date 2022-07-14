@@ -18,6 +18,7 @@
 <div class="track-list-container">
    <app-track-item
       *ngFor="let track of tracks | tracksFilter: term"
-      [track]="track">
+      [track]="track"
+      (click)="scrollToTop()" >
    </app-track-item>
 </div>
