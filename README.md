@@ -31,3 +31,12 @@ Circle Tracks contains basic information about every track the top three NASCAR 
 * Track information by [NASCAR](https://www.nascar.com/) and [iRacing](https://www.iracing.com/)
 * Track maps by [iRacing](https://www.iracing.com/)
 * Icons by [Icons8](https://icons8.com/)
+
+## Setup
+* Clone repository
+* Open in editor
+* Run `npm install`
+* Run `ng serve` to start front-end
+* Run `nodemon server.js` to start backend
+* Make sure local MongoDB server is running
+* Open localhost:4200 in browser
