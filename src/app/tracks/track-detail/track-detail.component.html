@@ -31,6 +31,9 @@
       </div>
     </div>
 
+    <h3 class="track-map-heading">Track Map</h3>
+    <img class="track-detail-map" [src]="track?.mapUrl" alt="Track map image of {{ track?.name }}">
+
     <div class="track-detail-buttons">
       <a routerLink="edit" class="a-button">Edit</a>
       <a class="a-button a-button-secondary" (click)="onDelete()">Delete</a>
