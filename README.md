@@ -35,8 +35,8 @@ Circle Tracks contains basic information about every track the top three NASCAR 
 ## Setup
 * Clone repository
 * Open in editor
-* Run `npm install`
-* Run `ng serve` to start front-end
+* Run `npm install` to install dependencies
+* Run `ng serve` to start frontend
 * Run `nodemon server.js` to start backend
 * Make sure local MongoDB server is running
 * Open localhost:4200 in browser
