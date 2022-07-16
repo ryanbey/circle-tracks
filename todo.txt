@@ -1,3 +1,2 @@
 LOW
 - Add animation to navbar hover
-- Add gradient to track detail image for better readability

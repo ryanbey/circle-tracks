@@ -1,8 +1,12 @@
 .track-detail-image {
-  // max-width: 70%;
   max-width: 100%;
   border-top-left-radius: var(--bradius);
-  border-top-right-radius: var(--bradius) ;
+  border-top-right-radius: var(--bradius);
+  mask-image: linear-gradient(
+      to top, 
+      rgba(0,0,0,.05) 0%,
+      rgba(0,0,0,1) 25%
+    );
 }
 
 .right-side-heading {
@@ -13,7 +17,7 @@
   margin: 0;
   margin-bottom: .5em;
   color: var(--white);
-  filter: drop-shadow(0px 1px 2px black);
+  filter: drop-shadow(0px 1px 1px black);
 }
 
 .track-info-container {
