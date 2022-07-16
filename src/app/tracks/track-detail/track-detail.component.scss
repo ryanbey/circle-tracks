@@ -58,3 +58,14 @@
 .track-map-heading {
   margin: 0;
 }
+
+@media(max-width: 500px) {
+  .right-side-heading {
+    font-size: 1.25em;
+    top: -40px;
+  }
+
+  .item-value {
+    font-size: 1.7em;
+  }
+}

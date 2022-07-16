@@ -5,6 +5,7 @@
    padding: .5em;
    display: flex;
    align-items: center;
+   max-width: 100%;
 }
 
 .track-tags {
@@ -29,4 +30,14 @@
 .track-list-container {
    background-color: var(--darkgray);
    border-radius: var(--bradius);
+}
+
+@media(max-width: 1700px) {
+   .search-bar {
+   margin-right: 1em;
+   max-width: 60%;
+      & > input {
+         max-width: 100%;
+      }
+   }
 }
