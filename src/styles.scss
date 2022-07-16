@@ -155,3 +155,17 @@ img {
    -webkit-user-select: none;
    -ms-user-select: none;
 }
+
+::-webkit-scrollbar {
+   width: 8px;
+   &-track {
+       background: var(--black);
+   }
+   &-thumb {
+       background: var(--lightgray-darker);
+       border-radius: 1em;
+       &:hover {
+           background: var(--lightgray);
+       }
+   }
+}

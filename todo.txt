@@ -1,6 +1,3 @@
 LOW
-- Fix header image responsiveness
 - Add animation to navbar hover
 - Add gradient to track detail image for better readability
-- Improve track edit input element responsiveness (keep all fields the same size)
-- Scroll bar styling
