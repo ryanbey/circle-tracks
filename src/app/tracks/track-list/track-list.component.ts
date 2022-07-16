@@ -34,11 +34,10 @@ export class TrackListComponent implements OnInit {
   }
 
   scrollToTop(): void {
-    window.scroll({ 
-      top: 150, 
-      left: 0, 
-      behavior: 'smooth' 
-});
+    window.scroll({
+      top: 150,
+      left: 0,
+      behavior: 'smooth',
+    });
   }
-  
 }
