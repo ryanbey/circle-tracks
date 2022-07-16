@@ -35,7 +35,7 @@ export class TrackListComponent implements OnInit {
 
   scrollToTop(): void {
     window.scroll({ 
-      top: 0, 
+      top: 150, 
       left: 0, 
       behavior: 'smooth' 
 });
