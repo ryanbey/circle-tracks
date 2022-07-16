@@ -1,0 +1,41 @@
+footer {
+  margin: 0 auto;
+  background-color: var(--darkgray);
+  margin-top: 5em;
+}
+
+
+.footer-container {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.right-list {
+  display: flex;
+  align-items: center;
+  & > li {
+    margin-left: .5em;
+    & > a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.social-icon {
+  width: 25px;
+  position: relative;
+  transition: all var(--transition);
+  &:hover {
+      transform: translateY(-5px);
+    }
+}
