@@ -17,11 +17,13 @@ a {
    padding-left: 1em;
    font-size: 1.2em;
    box-sizing: content-box;
+   transition: all 100ms;
    &:visited {
       color: inherit;
    }
    &:hover {
       background-color: var(--black);
+      box-shadow: inset 0 4px 0 var(--white);
    }
 }
 
